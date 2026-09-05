@@ -1,0 +1,36 @@
+// hello.spring -- the basics of Spring
+
+function greet(name) out
+    constant message = "Hello, \(name)! Spring is running."
+    print(message)
+out
+
+function classify(score) out
+    if score >= 90 out
+        return "A"
+    otherwise out
+        if score >= 70 out
+            return "B"
+        otherwise out
+            return "C"
+        out
+    out
+out
+
+greet("world")
+
+variable total = 0
+for.each n in [1, 2, 3, 4, 5] out
+    total = total + n
+out
+print("Total is \(total)")
+
+variable countdown = 3
+repeat.while countdown > 0 out
+    print(countdown)
+    countdown = countdown - 1
+out
+
+print(classify(95))
+print(classify(72))
+print(classify(40))

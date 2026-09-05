@@ -1,0 +1,21 @@
+{
+  "name": "spring-lang",
+  "version": "0.1.0",
+  "description": "Spring: a readable, Swift-inspired language that transpiles to JavaScript for the web.",
+  "main": "src/parser.js",
+  "bin": {
+    "springc": "bin/springc.js"
+  },
+  "scripts": {
+    "test": "node test/run.js",
+    "build:examples": "node bin/springc.js examples/hello.spring -o examples/hello.compiled.js && node bin/springc.js examples/ui-demo.spring -o examples/ui-demo.compiled.js"
+  },
+  "keywords": [
+    "spring",
+    "language",
+    "transpiler",
+    "swift",
+    "javascript"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Spring playground</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 480px; margin: 60px auto; }
+    .spring-button { padding: 8px 14px; border-radius: 6px; border: 1px solid #ccc; cursor: pointer; }
+    .spring-button:hover { background: #f2f2f2; }
+  </style>
+</head>
+<body>
+  <h1>Spring playground</h1>
+  <p>This page loads the runtime, then the JS compiled from <code>ui-demo.spring</code>.</p>
+  <div id="app"></div>
+
+  <script src="../src/runtime.js"></script>
+  <script src="ui-demo.compiled.js"></script>
+</body>
+</html>

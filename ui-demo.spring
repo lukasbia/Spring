@@ -1,0 +1,18 @@
+// ui-demo.spring -- Spring's SwiftUI-flavored, readable UI builders
+
+function counterView(count) out
+    return vertical.stack out
+        text("Count: \(count)")
+        horizontal.stack out
+            button("Add one") action: out
+                print("add one tapped")
+            out
+            button("Reset") action: out
+                print("reset tapped")
+            out
+        out
+    out
+out
+
+constant view = counterView(0)
+mount(view, "#app")
